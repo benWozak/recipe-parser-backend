@@ -20,7 +20,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 # Install Playwright browsers in the virtual environment
-RUN playwright install chromium --with-deps
+RUN /opt/venv/bin/python -m playwright install chromium --with-deps
 
 # Stage 2: Runtime stage with minimal dependencies
 FROM python:3.12-slim-bookworm
