@@ -1,0 +1,41 @@
+fastapi==0.104.1
+uvicorn[standard]==0.35.0
+sqlalchemy==2.0.32
+alembic==1.12.1
+psycopg2-binary==2.9.10
+pydantic[email]==2.10.4
+pydantic-settings==2.1.0
+python-multipart==0.0.6
+PyJWT[crypto]==2.10.1
+passlib[bcrypt]==1.7.4
+httpx==0.25.2
+beautifulsoup4==4.12.2
+requests==2.32.4
+python-dotenv==1.0.0
+clerk-backend-sdk==1.0.0
+recipe-scrapers==14.54.0
+Pillow==10.4.0
+google-cloud-vision==3.4.5
+openai==1.3.0
+pytest==7.4.3
+pytest-asyncio==0.21.1
+# Core recipe parsing dependencies
+instaloader>=4.10.0
+nltk>=3.8.0
+python-dateutil>=2.8.0
+
+# spacy>=3.7.0
+cryptography>=41.0.0
+nanoid==2.0.0
+
+# Rate limiting and DoS protection
+slowapi==0.1.9
+
+# Video processing for thumbnail generation
+ffmpeg-python>=0.2.0
+
+# File security and validation
+python-magic>=0.4.27
+
+# Stripe payments
+stripe>=7.0.0

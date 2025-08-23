@@ -1,0 +1,110 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Documentation
+README.md
+SECURITY.md
+*.md
+
+# Tests
+tests/
+test_*.py
+*_test.py
+
+# Logs (exclude the logs directory structure but ignore log files)
+logs/*.log
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Media files in development (will be volume mounted in production)
+media/images/*
+media/videos/*
+media/thumbnails/*
+media/video_thumbnails/*
+media/temp/*
+media/metadata/*
+media/quarantine/*
+
+# Keep directory structure but ignore contents
+!media/images/.gitkeep
+!media/videos/.gitkeep
+!media/thumbnails/.gitkeep
+!media/video_thumbnails/.gitkeep
+!media/temp/.gitkeep
+!media/metadata/.gitkeep
+!media/quarantine/.gitkeep
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Security
+generate_secret_key.py
+
+# Alembic compiled files
+alembic/versions/__pycache__/
