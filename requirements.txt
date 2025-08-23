@@ -39,3 +39,6 @@ python-magic>=0.4.27
 
 # Stripe payments
 stripe>=7.0.0
+
+# Browser automation for protected websites
+playwright>=1.40.0
