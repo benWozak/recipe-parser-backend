@@ -8,6 +8,26 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     libmagic1 \
     libmagic-dev \
+    wget \
+    gnupg \
+    ca-certificates \
+    fonts-liberation \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libatspi2.0-0 \
+    libdrm2 \
+    libgtk-3-0 \
+    libnspr4 \
+    libnss3 \
+    libx11-xcb1 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxfixes3 \
+    libxrandr2 \
+    libxss1 \
+    libxtst6 \
+    xvfb \
     && rm -rf /var/lib/apt/lists/*
 
 # Create and activate virtual environment
@@ -30,6 +50,24 @@ RUN apt-get update && apt-get install -y \
     libpq5 \
     libmagic1 \
     ffmpeg \
+    ca-certificates \
+    fonts-liberation \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libatspi2.0-0 \
+    libdrm2 \
+    libgtk-3-0 \
+    libnspr4 \
+    libnss3 \
+    libx11-xcb1 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxfixes3 \
+    libxrandr2 \
+    libxss1 \
+    libxtst6 \
+    xvfb \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy virtual environment from builder stage
