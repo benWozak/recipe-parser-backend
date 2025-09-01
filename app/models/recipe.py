@@ -30,6 +30,7 @@ class Recipe(Base):
     media = Column(JSONB)
     instructions = Column(JSONB)
     ingredients = Column(JSONB)
+    notes = Column(JSONB)
     collection_id = Column(String, ForeignKey('collections.id'), nullable=True, index=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())

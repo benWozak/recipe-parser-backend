@@ -23,6 +23,7 @@ class ParsedRecipe(BaseModel):
     servings: Optional[int] = None
     instructions: str  # HTML formatted instructions
     ingredients: str   # HTML formatted ingredients
+    notes: str = ""    # HTML formatted notes
     confidence_score: float = 0.0
     media: Optional[Dict[str, Any]] = None
 
@@ -162,5 +163,8 @@ class BaseParser(ABC):
         
         if not parsed_data.ingredients:
             parsed_data.ingredients = ""
+            
+        if not parsed_data.notes:
+            parsed_data.notes = ""
         
         return parsed_data

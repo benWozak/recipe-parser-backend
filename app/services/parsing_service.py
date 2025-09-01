@@ -85,7 +85,8 @@ class ParsingService:
             "description": "Recipe parsed from uploaded image",
             "source_type": "image",
             "instructions": {"steps": ["Please add recipe steps manually"]},
-            "ingredients": []
+            "ingredients": [],
+            "notes": ""
         }
         
         if collection_id:
@@ -106,6 +107,7 @@ class ParsingService:
             "servings": parsed_recipe.servings,
             "instructions": parsed_recipe.instructions,  # Now structured
             "ingredients": parsed_recipe.ingredients,    # Now structured
+            "notes": parsed_recipe.notes,                # Now structured
             "confidence_score": parsed_recipe.confidence_score,
             "media": parsed_recipe.media
         }

@@ -34,6 +34,7 @@ class RecipeBase(BaseModel):
     source_url: Optional[str] = None
     media: Optional[Dict[str, Any]] = None
     instructions: Optional[Dict[str, Any]] = None
+    notes: Optional[Dict[str, Any]] = None
 
 class RecipeCreate(RecipeBase):
     ingredients: Optional[Dict[str, Any]] = None
@@ -52,6 +53,7 @@ class RecipeUpdate(BaseModel):
     media: Optional[Dict[str, Any]] = None
     instructions: Optional[Dict[str, Any]] = None
     ingredients: Optional[Dict[str, Any]] = None
+    notes: Optional[Dict[str, Any]] = None
     tags: Optional[List[TagCreate]] = None
     collection_id: Optional[str] = None
 
@@ -61,6 +63,7 @@ class Recipe(RecipeBase):
     created_at: datetime
     updated_at: Optional[datetime] = None
     ingredients: Optional[Dict[str, Any]] = None
+    notes: Optional[Dict[str, Any]] = None
     tags: List[Tag] = []
     collection_id: Optional[str] = None
 
